@@ -54,7 +54,7 @@ let gameoverScreen = {}
 let roundsScreen = {}
 
 let gameMode = "versus";
-let difficultyArr = ["beginner", "medium", "unfair"];
+let difficultyArr = ["beginner", "medium", "hard"];
 let difficulty = difficultyArr[1];
 let winner = false;
 let rounds = 5;
