@@ -28,7 +28,6 @@ startScreen.init = function() {
     [(Game.width-cursorWidth-2*cursorThickness)/2, gridSize*20.5],
     [(Game.width-cursorWidth-2*cursorThickness)/2, gridSize*25.5],
     [(Game.width-cursorWidth-2*cursorThickness)/2, gridSize*30.5],
- //   [(Game.width-cursorWidth-2*cursorThickness)/2, gridSize*35.5]
   ]
   startScreen.cursor = new Cursor(cursorWidth, cursorHeight, positions, cursorThickness)
 }
@@ -115,7 +114,7 @@ gameoverScreen.update = function() {
 
 // rounds screen
 roundsScreen.init = function() {
-  let cursorWidth = gridSize*20;
+  let cursorWidth = gridSize*25;
   let cursorHeight = gridSize*4;
   let cursorThickness = 5;
   let positions = [
@@ -131,7 +130,7 @@ roundsScreen.draw = function() {
   let t1 = "OPTIONS";
   let t2 = String(rounds);
   let o1 = "ROUNDS";
-  let o2 = "AI "+difficulty;
+  let o2 = "Level "+difficulty;
   let o3 = "MENU";
   let f1 = "1972 Atari Inc"
   let menuSize = 5;

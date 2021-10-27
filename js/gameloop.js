@@ -37,7 +37,7 @@ window.addEventListener("keydown", (event) => {
 let Game = {
   fps: 60,
   width: 804,
-  height: 600
+  height: 650
 };
 
 // sound assets URL
@@ -54,7 +54,7 @@ let gameoverScreen = {}
 let roundsScreen = {}
 
 let gameMode = "versus";
-let difficultyArr = ["n00b", "medium", "unfair"];
+let difficultyArr = ["beginner", "medium", "unfair"];
 let difficulty = difficultyArr[1];
 let winner = false;
 let rounds = 5;
