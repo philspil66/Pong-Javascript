@@ -59,7 +59,7 @@ versusScreen.draw = function() {
   }
   let f1 = "1972 Atari Inc"
   let footerSize = 2.5;
-  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*8.5, f1, footerSize);
+  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*9, f1, footerSize);
 };
 
 versusScreen.update = function() {

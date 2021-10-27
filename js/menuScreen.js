@@ -97,7 +97,7 @@ gameoverScreen.draw = function() {
   writeText((Game.width-t2.length*4*gridSize)/2, gridSize*15, t2);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*30, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*35, o3, menuSize);
-  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*8.5, f1, footerSize);
+  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*9, f1, footerSize);
   gameoverScreen.cursor.draw();
 }
 
@@ -141,7 +141,7 @@ roundsScreen.draw = function() {
   writeText((Game.width-o1.length*4*menuSize)/2, gridSize*30, o1, menuSize);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*35, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*40, o3, menuSize);
-  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*8.5, f1, footerSize);
+  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*9, f1, footerSize);
   roundsScreen.cursor.draw();
 }
 
