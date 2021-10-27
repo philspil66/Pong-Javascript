@@ -52,7 +52,7 @@ startScreen.draw = function() {
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*32, o3, menuSize);
   writeText((Game.width-b1.length*4*hintSize)/2, Game.height-hintSize*35, b1, hintSize);
   writeText((Game.width-b2.length*4*hintSize)/2, Game.height-hintSize*28, b2, hintSize);
-  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*8.5, f1, footerSize);
+  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*9, f1, footerSize);
 
   startScreen.cursor.draw();
 }
