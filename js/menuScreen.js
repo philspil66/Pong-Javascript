@@ -85,7 +85,7 @@ gameoverScreen.draw = function() {
   let t1 = "GAMEOVER";
   let t2;
   if (gameMode === "enemy") {t2 = "YOU "+(winner?"WIN":"LOSE")}
-  else {t2 = "PLAYER "+(winner?"1":"2")+"WINS"}
+  else {t2 = "PLAYER "+(winner?"1":"2")+" WINS"}
   let o2 = "PLAY AGAIN";
   let o3 = "MENU";
   let f1 = "1972 Atari Inc";
