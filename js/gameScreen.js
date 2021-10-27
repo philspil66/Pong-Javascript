@@ -57,6 +57,10 @@ versusScreen.draw = function() {
     drawSquare(boardWidth/2-11*gridSize, boardHeight/2-10*gridSize, gridSize*25, "#FFF")
     writeText(boardWidth/2-10*gridSize, boardHeight/2, "PAUSED", gridSize, "#000")
   }
+  let h1 = "PONG"
+  let headerSize = 3.5;
+  writeText((Game.width-h1.length*4.5*headerSize)/2, Game.height-headerSize*183, h1, headerSize);
+  
   let f1 = "1972 Atari Inc"
   let footerSize = 2.5;
   writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*9, f1, footerSize);
