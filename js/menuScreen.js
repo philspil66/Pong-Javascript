@@ -41,15 +41,19 @@ startScreen.draw = function() {
   let o3 = "OPTIONS";
   let b1 = "ENTER - GO                       ESC - GO BACK"
   let b2 = "PLAYER1 - W/S                PLAYER2 - UP/DOWN"
+  let f1 = "1972 Atari Inc"
   let titleSize = 20;
   let menuSize = 5;
   let hintSize = 3;
+  let footerSize = 2.5;
   writeText((Game.width-t1.length*6.5*gridSize)/2, gridSize*7, t1, titleSize);
   writeText((Game.width-o1.length*4*menuSize)/2, gridSize*22, o1, menuSize);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*27, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*32, o3, menuSize);
   writeText((Game.width-b1.length*4*hintSize)/2, Game.height-hintSize*35, b1, hintSize);
   writeText((Game.width-b2.length*4*hintSize)/2, Game.height-hintSize*28, b2, hintSize);
+  writeText((Game.width-f1.length*4*hintSize)/2, Game.height-hintSize*8, f1, footerSize);
+
   startScreen.cursor.draw();
 }
 
@@ -85,12 +89,15 @@ gameoverScreen.draw = function() {
   else {t2 = "PLAYER "+(winner?"1":"2")+"WINS"}
   let o2 = "PLAY AGAIN";
   let o3 = "MENU";
+  let f1 = "1972 Atari Inc";
+  let footerSize = 2.5;
   let menuSize = 5;
   let hintSize = 3;
   writeText((Game.width-t1.length*4*gridSize)/2, gridSize*5, t1);
   writeText((Game.width-t2.length*4*gridSize)/2, gridSize*15, t2);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*30, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*35, o3, menuSize);
+  writeText((Game.width-f1.length*4*hintSize)/2, Game.height-hintSize*8, f1, footerSize);
   gameoverScreen.cursor.draw();
 }
 
@@ -126,13 +133,16 @@ roundsScreen.draw = function() {
   let o1 = "ROUNDS";
   let o2 = "AI "+difficulty;
   let o3 = "MENU";
+  let f1 = "1972 Atari Inc"
   let menuSize = 5;
   let hintSize = 3;
+  let footerSize = 2.5;
   writeText((Game.width-t1.length*4*gridSize)/2, gridSize*10, t1);
   writeText((Game.width-t2.length*4*gridSize)/2, gridSize*22, t2);
   writeText((Game.width-o1.length*4*menuSize)/2, gridSize*30, o1, menuSize);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*35, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*40, o3, menuSize);
+  writeText((Game.width-b2.length*1.1*hintSize)/2, Game.height-hintSize*8, f1, footerSize);
   roundsScreen.cursor.draw();
 }
 
