@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Globals
 let gridSize = 12;
 let paddleStep = 10;
-let paddleLength = 8*gridSize;
+let paddleLength = 6*gridSize;
 let ballSpeed = 10;
 let marginSize = 3*gridSize;
 let letterSpacing = 4*gridSize;
