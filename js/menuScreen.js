@@ -135,14 +135,13 @@ roundsScreen.draw = function() {
   let o3 = "MENU";
   let f1 = "1972 Atari Inc"
   let menuSize = 5;
-  let hintSize = 3;
   let footerSize = 2.5;
   writeText((Game.width-t1.length*4*gridSize)/2, gridSize*10, t1);
   writeText((Game.width-t2.length*4*gridSize)/2, gridSize*22, t2);
   writeText((Game.width-o1.length*4*menuSize)/2, gridSize*30, o1, menuSize);
   writeText((Game.width-o2.length*4*menuSize)/2, gridSize*35, o2, menuSize);
   writeText((Game.width-o3.length*4*menuSize)/2, gridSize*40, o3, menuSize);
-  writeText((Game.width-b2.length*1.1*hintSize)/2, Game.height-hintSize*8, f1, footerSize);
+  writeText((Game.width-f1.length*4.5*footerSize)/2, Game.height-footerSize*8.5, f1, footerSize);
   roundsScreen.cursor.draw();
 }
 
